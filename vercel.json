@@ -1,5 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/api/hustle", "destination": "/api/hustle.js" }
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
